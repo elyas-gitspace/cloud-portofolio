@@ -39,3 +39,5 @@ jobs:
 
       - name: Sync site to S3 and invalidate CloudFront
         run: ./deploy.sh
+
+# pipeline trigger test
