@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Elyas Meziani · Cloud Engineer, DevOps &amp; SRE</title>
-  <meta name="description" content="Elyas Meziani — Cloud Engineer, DevOps and Site Reliability Engineer based in Paris. Terraform, Kubernetes, GCP, AWS, CI/CD and observability. Open to a permanent role or graduate programme in 2027.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Elyas Meziani · Cloud Engineer</title>
+  <meta name="description" content="Elyas Meziani, Cloud Engineer in Paris (DevOps, SRE). Google Cloud, Terraform, GitLab CI, Kubernetes. Open to a permanent role or graduate programme in 2027.">
   <meta name="author" content="Elyas Meziani">
-  <meta name="theme-color" content="#F8FAFC">
-
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Elyas Meziani · Cloud Engineer, DevOps &amp; SRE">
-  <meta property="og:description" content="Reliable cloud platforms, reusable infrastructure as code and backups that are actually tested.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Elyas Meziani · Cloud Engineer">
+  <meta property="og:description" content="Infrastructure for a data platform on Google Cloud. Terraform, CI/CD, backups restored every day.">
   <meta name="twitter:card" content="summary">
 
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/style.css">
 
   <script type="application/ld+json">
@@ -27,488 +27,339 @@
     "email": "mailto:meziani.elyaspro@gmail.com",
     "address": { "@type": "PostalAddress", "addressLocality": "Paris", "addressCountry": "FR" },
     "alumniOf": ["ESILV", "IMT Business School"],
-    "sameAs": [
-      "https://github.com/elyas-gitspace",
-      "https://www.linkedin.com/in/elyas-meziani-95009228b"
-    ],
-    "knowsAbout": ["Terraform", "Kubernetes", "Google Cloud", "AWS", "CI/CD", "Observability", "Site Reliability Engineering"]
+    "sameAs": ["https://github.com/elyas-gitspace", "https://www.linkedin.com/in/elyas-meziani-95009228b"],
+    "knowsAbout": ["Google Cloud", "Terraform", "GitLab CI", "Kubernetes", "PostgreSQL", "Site Reliability Engineering"]
   }
   </script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="wordmark" href="#top" aria-label="Elyas Meziani, back to top">
-        <span class="wordmark-mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32" width="26" height="26"><path d="M7 21.5c-2.6.1-4.4-1.9-4.1-4.3.3-2.2 2.3-3.6 4.5-3.2.4-3.4 3.3-5.9 6.8-5.7 2.8.2 5 2 5.8 4.5 1-.6 2.3-.8 3.6-.5 2.4.6 3.9 2.9 3.4 5.3-.4 2.2-2.4 3.8-4.7 3.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="10" cy="26" r="1.6" fill="currentColor"/><circle cx="16" cy="26" r="1.6" fill="currentColor"/><circle cx="22" cy="26" r="1.6" fill="currentColor"/><path d="M10 26h12" stroke="currentColor" stroke-width="1" stroke-dasharray="1.5 2"/></svg>
-        </span>
-        <span>Elyas Meziani</span>
-      </a>
-
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
-        <span class="sr-only">Menu</span>
-        <span class="nav-toggle-bar" aria-hidden="true"></span>
-      </button>
-
-      <nav id="site-nav" class="site-nav" aria-label="Main">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+  <header class="bar">
+    <div class="bar-inner">
+      <a class="mark" href="#top" aria-label="Elyas Meziani, back to top">EM</a>
+      <nav aria-label="Sections">
+        <ol>
+          <li><a href="#work"><span>01</span>Work</a></li>
+          <li><a href="#stack"><span>02</span>Stack</a></li>
+          <li><a href="#builds"><span>03</span>Builds</a></li>
+          <li><a href="#notes"><span>04</span>Notes</a></li>
+          <li><a href="#contact"><span>05</span>Contact</a></li>
+        </ol>
       </nav>
+      <p class="bar-status"><span class="led" aria-hidden="true"></span>Available 2027</p>
     </div>
   </header>
 
   <main id="main">
 
-    <!-- ============ HERO ============ -->
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="wrap hero-grid">
-        <div class="hero-text">
-          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Paris · Open to a permanent role or graduate programme, 2027</p>
-          <h1 id="hero-title" class="display">
-            Infrastructure that<br>
-            <em>quietly</em> holds.
-          </h1>
-          <p class="lede">
-            I'm <strong>Elyas Meziani</strong>, a Cloud Engineer working across DevOps and Site Reliability.
-            I build reusable infrastructure as code, keep pipelines honest with security scanning,
-            and make sure backups are not just taken, but <em>restored</em>, every day.
+    <!-- ===================== 00 · IDENTITY ===================== -->
+    <section class="hero" id="top" aria-label="Introduction">
+      <div class="frame">
+        <p class="hero-ref mono"><span>EM—26</span><span>Paris, FR</span><span>Portfolio, rev. 2</span></p>
+
+        <h1 class="name">
+          <span class="name-a">Elyas</span>
+          <span class="name-b">Meziani</span>
+        </h1>
+        <hr class="rule-metal">
+
+        <dl class="spec">
+          <div><dt class="mono">Role</dt><dd>Cloud Engineer<span>DevOps · SRE · data platforms</span></dd></div>
+          <div><dt class="mono">Now</dt><dd>Javelot<span>Google Cloud, work-study until Jul 2027</span></dd></div>
+          <div><dt class="mono">Looking for</dt><dd>Permanent role<span>or graduate programme, from 2027</span></dd></div>
+          <div><dt class="mono">Based</dt><dd>Paris<span>EU citizen · FR / EN / ES</span></dd></div>
+        </dl>
+
+        <div class="hero-foot">
+          <p class="statement">
+            I run infrastructure for a data platform on Google Cloud. Terraform modules other projects pull by version,
+            pipelines that fail on vulnerable images, and backups restored every day to prove they work.
           </p>
-          <ul class="hero-links">
-            <li><a class="btn btn-primary" href="#projects">See the work <span aria-hidden="true">→</span></a></li>
-            <li><a class="btn btn-ghost" href="https://github.com/elyas-gitspace" rel="me noopener" target="_blank">GitHub</a></li>
-            <li><a class="btn btn-ghost" href="https://www.linkedin.com/in/elyas-meziani-95009228b" rel="me noopener" target="_blank">LinkedIn</a></li>
+          <ul class="out mono">
+            <li><a href="mailto:meziani.elyaspro@gmail.com">Email</a></li>
+            <li><a href="https://github.com/elyas-gitspace" target="_blank" rel="me noopener">GitHub ↗</a></li>
+            <li><a href="https://www.linkedin.com/in/elyas-meziani-95009228b" target="_blank" rel="me noopener">LinkedIn ↗</a></li>
           </ul>
         </div>
-
-        <figure class="hero-art" aria-hidden="true">
-          <!-- Hand-drawn style illustration: a cloud over a small distributed system, on topographic lines -->
-          <svg viewBox="0 0 420 420" class="sketch">
-            <g class="topo" fill="none" stroke="var(--line)" stroke-width="1">
-              <path d="M20 330c60-30 120-10 170-40s90-70 160-50 60 40 60 40"/>
-              <path d="M10 360c70-26 130-6 190-36s100-62 160-46 50 34 50 34"/>
-              <path d="M30 390c60-20 140 0 190-26s90-50 150-40"/>
-              <path d="M50 300c50-26 100-14 140-36s70-60 130-46"/>
-            </g>
-
-            <!-- cloud -->
-            <path class="draw ink" d="M108 168c-26 2-44-18-41-42 3-22 23-36 45-32 5-35 34-60 70-57 28 2 51 21 59 46 11-6 24-8 37-5 25 6 41 30 35 55-5 23-26 39-50 38" fill="var(--paper)" stroke="var(--ink-2)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path class="draw soft" d="M128 150c14-4 26 2 32 12M214 98c10 6 15 16 15 28" fill="none" stroke="var(--slate)" stroke-width="1.4" stroke-linecap="round"/>
-
-            <!-- links down to nodes -->
-            <g class="links" fill="none" stroke="var(--slate)" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="3 5">
-              <path d="M150 176c-6 30-30 46-52 66"/>
-              <path d="M210 178c2 26 2 46 0 70"/>
-              <path d="M270 172c10 28 30 48 56 66"/>
-            </g>
-
-            <!-- nodes (slightly irregular boxes) -->
-            <g class="nodes" fill="var(--paper)" stroke="var(--ink-2)" stroke-width="1.8" stroke-linejoin="round">
-              <path d="M66 244l64-2 2 44-66 2z"/>
-              <path d="M178 250l64 1-1 44-64-1z"/>
-              <path d="M294 240l64 2-2 44-64-2z"/>
-            </g>
-            <g fill="none" stroke="var(--slate)" stroke-width="1.2" stroke-linecap="round">
-              <path d="M76 256h40M76 266h28M76 276h34"/>
-              <path d="M188 262h40M188 272h22M188 282h36"/>
-              <path d="M304 252h40M304 262h30M304 272h24"/>
-            </g>
-
-            <!-- mesh between nodes -->
-            <path d="M132 268c16 6 30 6 46 2M242 272c18 0 34-4 52-12" fill="none" stroke="var(--ink-2)" stroke-width="1.2" stroke-linecap="round"/>
-
-            <!-- small blueprint annotations -->
-            <g class="annot" fill="var(--muted)" font-family="var(--font-sans)" font-size="10" letter-spacing=".08em">
-              <text x="300" y="54">fig. 01</text>
-              <text x="66" y="310">eu-west</text>
-              <text x="182" y="316">gitops</text>
-              <text x="298" y="304">restore ✓</text>
-            </g>
-            <g stroke="var(--muted)" stroke-width="1" fill="none">
-              <path d="M300 60h46"/><path d="M346 56v8"/>
-              <circle cx="352" cy="110" r="3"/><circle cx="364" cy="122" r="2"/><circle cx="58" cy="100" r="2.5"/>
-            </g>
-          </svg>
-          <figcaption class="sr-only">Illustration of a cloud connected to three servers</figcaption>
-        </figure>
       </div>
+    </section>
 
-      <div class="wrap hero-meta">
-        <dl>
-          <div><dt>Currently</dt><dd>Cloud Engineer (work-study) at Javelot</dd></div>
-          <div><dt>Studying</dt><dd>MSc Computer Science, ESILV</dd></div>
-          <div><dt>Certified</dt><dd>CKAD · AWS Cloud Practitioner Essentials</dd></div>
+    <!-- ===================== 01 · WORK (dense) ===================== -->
+    <section class="sec sec-work" id="work" aria-labelledby="work-h">
+      <div class="frame">
+        <header class="sec-head">
+          <span class="sec-n mono">01</span>
+          <h2 id="work-h">Work</h2>
+          <p class="sec-note mono">Two work-study contracts · 2025 — 2027</p>
+        </header>
+
+        <article class="job">
+          <div class="job-id">
+            <p class="mono job-date"><span class="led" aria-hidden="true"></span>Jun 2026 — Jul 2027</p>
+            <h3>Javelot</h3>
+            <p class="job-role">Cloud Engineer</p>
+            <p class="job-ctx">Data platform on Google Cloud, agri-tech. Infrastructure, CI/CD, on-call.</p>
+          </div>
+
+          <div class="job-body">
+            <div class="row">
+              <h4 class="mono">Reliability</h4>
+              <ul>
+                <li>Point-in-time recovery for TimescaleDB with wal-g: custom image, continuous WAL archiving, nightly base backup.</li>
+                <li>Scheduled restore tests: a light restore every day and a full one every week, run by Cloud Build, triggered by Cloud Scheduler.</li>
+                <li>On-call: crashed Cloud Run services, CPU saturation on a VM, a BGP incident. Post-mortems and runbooks written after each.</li>
+                <li>Silenced a Cloud SQL CPU alert that fired every morning during scheduled dbt jobs, so real alerts stop hiding in it.</li>
+              </ul>
+            </div>
+            <div class="row">
+              <h4 class="mono">Infrastructure</h4>
+              <ul>
+                <li>Terraform modules (Cloud Scheduler, monitoring for Pub/Sub, Cloud SQL, Cloud Build) published to GitLab's Terraform Registry and consumed by version.</li>
+                <li>Pub/Sub-driven Cloud Run services and Compute Engine VMs behind IAP and OS Login, in staging and production.</li>
+                <li>IAM moved towards least privilege, including a separate group for interns.</li>
+              </ul>
+            </div>
+            <div class="row">
+              <h4 class="mono">CI/CD &amp; security</h4>
+              <ul>
+                <li>Image scanning (Dockle, Grype) and IaC scanning (KICS) in GitLab CI, failing on high and medium findings.</li>
+                <li>Renovate across several repositories; Cocogitto for conventional, automated release tags.</li>
+                <li>An MCP server so an AI agent can query the platform's resources.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="job job-prev">
+          <div class="job-id">
+            <p class="mono job-date">Sep 2025 — May 2026</p>
+            <h3>EDF</h3>
+            <p class="job-role">Datalake Developer</p>
+            <p class="job-ctx">AWS data lake workloads.</p>
+          </div>
+          <div class="job-body">
+            <div class="row">
+              <h4 class="mono">Scope</h4>
+              <ul>
+                <li>CloudWatch dashboards and alarms to catch incidents early.</li>
+                <li>EC2, S3 and IAM provisioned with Terraform; contributions to CI/CD deployments.</li>
+                <li>Python and Bash for routine operations; technical documentation; Agile sprints.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <table class="edu">
+          <caption class="mono">Education</caption>
+          <tbody>
+            <tr><td class="mono">2025 — 2027</td><th scope="row">MSc Computer Science</th><td>ESILV, Paris</td></tr>
+            <tr><td class="mono">2024 — 2025</td><th scope="row">Bachelor (L3) Computer Science</th><td>IMT Business School</td></tr>
+            <tr><td class="mono">2022 — 2024</td><th scope="row">Bachelor (L1–L2) Mathematics</th><td>Carnot</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===================== 02 · STACK (airy) ===================== -->
+    <section class="sec sec-stack" id="stack" aria-labelledby="stack-h">
+      <div class="frame">
+        <header class="sec-head">
+          <span class="sec-n mono">02</span>
+          <h2 id="stack-h">Stack</h2>
+          <p class="sec-note mono">From commit to alert, on the platform I work on today</p>
+        </header>
+
+        <ol class="chain">
+          <li><span class="mono">01 · commit</span><strong>GitLab CI</strong><p>Dockle, Grype, KICS. Renovate. Cocogitto tags.</p></li>
+          <li><span class="mono">02 · artifact</span><strong>Artifact Registry</strong><p>Scanned images, pulled by a read-only service account.</p></li>
+          <li><span class="mono">03 · infra</span><strong>Terraform</strong><p>Versioned modules from GitLab's registry.</p></li>
+          <li><span class="mono">04 · runtime</span><strong>Cloud Run, Compute Engine</strong><p>Pub/Sub between services. Cloud SQL, TimescaleDB.</p></li>
+          <li><span class="mono">05 · signal</span><strong>Cloud Monitoring</strong><p>Alerts to Slack. Grafana. SLIs/SLOs.</p></li>
+        </ol>
+
+        <div class="proof">
+          <div>
+            <h3 class="mono">In production</h3>
+            <p>Google Cloud: Cloud Run, Compute Engine, Pub/Sub, Cloud SQL, Cloud Build, Scheduler. Terraform, GitLab CI, Docker, Cloud Monitoring, Grafana, PostgreSQL and TimescaleDB, wal-g. At EDF on AWS: EC2, S3, IAM, Lambda, Athena, CloudWatch.</p>
+          </div>
+          <div>
+            <h3 class="mono">In my own projects</h3>
+            <p>Kubernetes on self-hosted VMs, Helm, KEDA, ArgoCD, Kafka, Prometheus. GitHub Actions with OIDC, S3 and CloudFront.</p>
+          </div>
+          <div>
+            <h3 class="mono">Learning</h3>
+            <p>Go, to read and eventually contribute to the tools I use (k9s, Prometheus). Preparing AWS Solutions Architect Associate.</p>
+          </div>
+        </div>
+
+        <div class="plate">
+          <p class="mono plate-h">Certifications &amp; badges</p>
+          <ul>
+            <li><strong>CKAD</strong><span>Certified Kubernetes Application Developer</span></li>
+            <li><strong>AWS</strong><span>Cloud Practitioner Essentials</span></li>
+          </ul>
+          <p class="mono plate-code">Code — Go · Python · Bash · SQL · HCL</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 03 · BUILDS (monumental) ===================== -->
+    <section class="sec sec-builds" id="builds" aria-labelledby="builds-h">
+      <div class="frame">
+        <header class="sec-head">
+          <span class="sec-n mono">03</span>
+          <h2 id="builds-h">Builds</h2>
+          <p class="sec-note mono">Side projects · open source</p>
+        </header>
+
+        <!-- B/01 — the project is a loop, so it gets a dial -->
+        <article class="build b-dial">
+          <p class="build-n mono">B/01 · Helm chart · Kubernetes · PostgreSQL</p>
+          <h3>pgkube-guard</h3>
+          <div class="build-grid">
+            <div class="build-text">
+              <p class="build-lede">Most teams back up their databases. Few ever test the restore.</p>
+              <dl class="facts">
+                <div><dt class="mono">Does</dt><dd>Dumps PostgreSQL to S3 every night, restores each dump into a throwaway database, alerts the moment a backup or a restore fails.</dd></div>
+                <div><dt class="mono">Trade-off</dt><dd>Logical dumps are simple and portable, but you can lose up to a day of data. WAL archiving (what I run at work with wal-g) is the next step for tighter recovery.</dd></div>
+                <div><dt class="mono">Next</dt><dd class="todo">[To complete: current limits and what you'd improve next]</dd></div>
+              </dl>
+              <a class="ln" href="https://github.com/elyas-gitspace/pgkube-guard" target="_blank" rel="noopener">Source ↗</a>
+            </div>
+            <figure class="dial" aria-hidden="true">
+              <svg viewBox="0 0 320 320">
+                <defs>
+                  <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#8B8E93"/><stop offset=".3" stop-color="#E9EAEC"/>
+                    <stop offset=".55" stop-color="#8F9297"/><stop offset=".8" stop-color="#F2F2F3"/><stop offset="1" stop-color="#7B7E83"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="160" cy="160" r="150" fill="none" stroke="url(#metal)" stroke-width="1.5"/>
+                <circle cx="160" cy="160" r="128" fill="#111" stroke="#2A2A2A"/>
+                <g class="ticks" stroke="#3A3A3A">
+                  <path d="M160 32v10M160 278v10M32 160h10M278 160h10"/>
+                </g>
+                <g class="labels">
+                  <text x="160" y="64">dump</text>
+                  <text x="252" y="164">restore</text>
+                  <text x="160" y="264">verify</text>
+                  <text x="68" y="164">alert</text>
+                </g>
+                <g class="hand"><path d="M160 160V84" stroke="#ECEBE7" stroke-width="1.5"/><circle cx="160" cy="160" r="4" fill="#ECEBE7"/></g>
+                <text class="dial-c" x="160" y="196">nightly</text>
+              </svg>
+            </figure>
+          </div>
+        </article>
+
+        <!-- B/02 — the point is the shape of the system, so it gets a diagram -->
+        <article class="build b-flow">
+          <p class="build-n mono">B/02 · Self-hosted Kubernetes · Hetzner</p>
+          <h3>keda-observation</h3>
+          <div class="build-grid build-grid-r">
+            <figure class="sys">
+              <svg viewBox="0 0 560 220" role="img" aria-labelledby="keda-t">
+                <title id="keda-t">Kafka topic feeding Go consumers scaled by KEDA on consumer lag, writing to PostgreSQL</title>
+                <g class="box"><rect x="10" y="80" width="110" height="60"/><text x="65" y="111">Kafka</text></g>
+                <g class="box pods">
+                  <rect x="220" y="24" width="120" height="40"/><text x="280" y="45">consumer</text>
+                  <rect x="220" y="90" width="120" height="40"/><text x="280" y="111">consumer</text>
+                  <rect class="ghost" x="220" y="156" width="120" height="40"/><text class="dim" x="280" y="177">0 … n</text>
+                </g>
+                <g class="box"><rect x="440" y="80" width="110" height="60"/><text x="495" y="111">PostgreSQL</text></g>
+                <g class="wires">
+                  <path d="M120 110 C170 110 170 44 220 44"/><path d="M120 110 H220"/><path class="dash" d="M120 110 C170 110 170 176 220 176"/>
+                  <path d="M340 44 C390 44 390 110 440 110"/><path d="M340 110 H440"/><path class="dash" d="M340 176 C390 176 390 110 440 110"/>
+                </g>
+                <text class="dim" x="280" y="10">KEDA · lag trigger</text>
+              </svg>
+            </figure>
+            <div class="build-text">
+              <p class="build-lede">Scale consumers on queue lag, not on CPU.</p>
+              <dl class="facts">
+                <div><dt class="mono">Setup</dt><dd>Go consumers on my own cluster (3 VMs, one control plane), deployed with ArgoCD, watched with Prometheus and Grafana.</dd></div>
+                <div><dt class="mono">Why lag</dt><dd>CPU says a pod is busy; lag says work is waiting. Consumers are added when messages pile up and drop to zero when the topic is quiet.</dd></div>
+                <div><dt class="mono">Next</dt><dd class="todo">[To complete: current limits and what you'd improve next]</dd></div>
+              </dl>
+              <a class="ln" href="https://github.com/elyas-gitspace/keda-observation" target="_blank" rel="noopener">Source ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- B/03 — the interesting part was one line, so it gets the diff -->
+        <article class="build b-diff">
+          <p class="build-n mono">B/03 · Terraform · AWS · GitHub Actions · this site</p>
+          <h3>infra-foundry</h3>
+          <div class="build-grid">
+            <div class="build-text">
+              <p class="build-lede">Every cloud resource behind my side projects, in one repository. Including this page.</p>
+              <dl class="facts">
+                <div><dt class="mono">Layout</dt><dd>One Terraform stack per project, shared modules, state in S3.</dd></div>
+                <div><dt class="mono">CI</dt><dd>Plan on every pull request, apply on merge, only for the stacks that changed.</dd></div>
+                <div><dt class="mono">This site</dt><dd>Private S3 bucket behind CloudFront (Origin Access Control), deployed by GitHub Actions through OIDC. No AWS key stored anywhere.</dd></div>
+              </dl>
+              <p class="ln-row">
+                <a class="ln" href="https://github.com/elyas-gitspace/infra-foundry" target="_blank" rel="noopener">infra-foundry ↗</a>
+                <a class="ln" href="https://github.com/elyas-gitspace/cloud-portofolio" target="_blank" rel="noopener">cloud-portofolio ↗</a>
+              </p>
+            </div>
+            <figure class="diff">
+              <figcaption class="mono">First deploy: AccessDenied. CloudTrail showed the subject GitHub actually sends.</figcaption>
+<pre><code><span class="del">- repo:elyas-gitspace/cloud-portofolio:ref:refs/heads/main</span>
+<span class="add">+ repo:elyas-gitspace@230582305/cloud-portofolio@1420671260:ref:refs/heads/main</span></code></pre>
+              <p class="diff-note">The trust policy matches account and repository IDs. A deleted repo recreated under the same name can't inherit the deploy role.</p>
+            </figure>
+          </div>
+        </article>
+
+        <table class="oss">
+          <caption class="mono">Open source</caption>
+          <tbody>
+            <tr><th scope="row"><a class="ln" href="https://github.com/kubernetes/website" target="_blank" rel="noopener">kubernetes/website ↗</a></th><td>Improved the official documentation page on CronJobs.</td></tr>
+            <tr><th scope="row">mcp-builder</th><td>A PaaS for creating MCP servers. Terraform modules and CI/CD practices for a more reliable infrastructure.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===================== 04 · NOTES (one idea) ===================== -->
+    <section class="sec sec-notes" id="notes" aria-labelledby="notes-h">
+      <div class="frame">
+        <header class="sec-head">
+          <span class="sec-n mono">04</span>
+          <h2 id="notes-h">Notes</h2>
+        </header>
+        <p class="quote">Two years of mathematics left one reflex: don't trust what you haven't checked. An alert that fires every morning is noise. A backup nobody restored is a hope.</p>
+        <dl class="facts notes-facts">
+          <div><dt class="mono">Practice</dt><dd>A Kubernetes cluster on three Hetzner VMs, built to break things on purpose.</dd></div>
+          <div><dt class="mono">Meetups</dt><dd>GDG Paris, Cloud Native France, Google Cloud &amp; AWS Summits, KubeAutoDay.</dd></div>
+          <div><dt class="mono">Outside tech</dt><dd class="todo">[To complete: one thing you do outside of tech]</dd></div>
         </dl>
       </div>
     </section>
 
-    <!-- ============ ABOUT ============ -->
-    <section class="section about" id="about" aria-labelledby="about-title">
-      <div class="wrap">
-        <header class="section-head">
-          <span class="section-num">01</span>
-          <h2 id="about-title">About</h2>
+    <!-- ===================== 05 · CONTACT ===================== -->
+    <section class="sec sec-contact" id="contact" aria-labelledby="contact-h">
+      <div class="frame">
+        <header class="sec-head">
+          <span class="sec-n mono">05</span>
+          <h2 id="contact-h">Contact</h2>
+          <p class="sec-note mono">Cloud, platform or reliability engineering · from 2027</p>
         </header>
-
-        <div class="about-grid">
-          <div class="about-body prose">
-            <p class="dropcap">
-              I came to infrastructure through mathematics. Two years of proofs taught me to distrust
-              anything I couldn't check, and that habit followed me into the cloud: an alert
-              that fires every morning is noise, a backup nobody has restored is a hope, and
-              a module copied between repositories is a future incident.
-            </p>
-            <p>
-              Today I work on a data platform on Google Cloud, after a year on AWS workloads at EDF.
-              I like the unglamorous parts of the job: writing the Terraform module that ten projects
-              will reuse, tuning an alert until it means something, writing the post-mortem
-              so the same thing never wakes anyone up twice.
-            </p>
-            <blockquote class="pull">
-              <p>“If it isn't tested, it isn't a backup. If it isn't in code, it isn't infrastructure.”</p>
-            </blockquote>
-          </div>
-
-          <aside class="about-side">
-            <h3 class="label">Education</h3>
-            <ol class="timeline-mini">
-              <li>
-                <span class="tm-date">2025 — 2027</span>
-                <span class="tm-title">MSc Computer Science</span>
-                <span class="tm-place">ESILV, Paris</span>
-              </li>
-              <li>
-                <span class="tm-date">2024 — 2025</span>
-                <span class="tm-title">Bachelor (L3) Computer Science</span>
-                <span class="tm-place">IMT Business School</span>
-              </li>
-              <li>
-                <span class="tm-date">2022 — 2024</span>
-                <span class="tm-title">Bachelor (L1 &amp; L2) Mathematics</span>
-                <span class="tm-place">Carnot</span>
-              </li>
-            </ol>
-
-            <h3 class="label">Approach</h3>
-            <ul class="principles">
-              <li><span>i.</span> Everything as code, reviewed and versioned.</li>
-              <li><span>ii.</span> Least privilege by default, even among trusted teammates.</li>
-              <li><span>iii.</span> Alerts must be actionable, or removed.</li>
-              <li><span>iv.</span> Prove resilience by breaking things on purpose.</li>
-            </ul>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ SKILLS ============ -->
-    <section class="section skills tinted" id="skills" aria-labelledby="skills-title">
-      <div class="wrap">
-        <header class="section-head">
-          <span class="section-num">02</span>
-          <h2 id="skills-title">Skills</h2>
-          <p class="section-intro">The tools I use daily, grouped by the problem they solve.</p>
-        </header>
-
-        <div class="skills-grid">
-          <article class="skill">
-            <svg class="skill-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M13 32c-5 0-8-4-7-8 1-3 4-5 7-4 1-6 6-10 12-9 4 1 7 4 8 8 2-1 4-1 6 0 3 1 5 5 4 8-1 3-4 5-7 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-            <h3>Cloud platforms</h3>
-            <p>GCP — Compute Engine, Cloud Run, Pub/Sub, Cloud SQL, Cloud Build, Scheduler.<br>AWS — EC2, S3, VPC, Lambda, API Gateway, CloudFront, Athena, RDS.</p>
-          </article>
-          <article class="skill">
-            <svg class="skill-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 12l14-4 14 4v12c0 9-6 14-14 17C16 38 10 33 10 24z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M17 23l5 5 9-10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-            <h3>Infrastructure as Code</h3>
-            <p>Terraform, reusable modules published on a private registry, GitOps with ArgoCD, Helm.</p>
-          </article>
-          <article class="skill">
-            <svg class="skill-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 24h8l4-9 6 18 4-9h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <h3>CI/CD &amp; DevSecOps</h3>
-            <p>GitLab CI, image scanning (Dockle, Grype), IaC scanning (KICS), Renovate, Cocogitto release automation.</p>
-          </article>
-          <article class="skill">
-            <svg class="skill-icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="9" y="12" width="13" height="10" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="26" y="12" width="13" height="10" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="17.5" y="27" width="13" height="10" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
-            <h3>Containers &amp; orchestration</h3>
-            <p>Docker, Kubernetes (CKAD), Helm, KEDA event-driven autoscaling, self-hosted clusters.</p>
-          </article>
-          <article class="skill">
-            <svg class="skill-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="14" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M24 24l7-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="24" cy="24" r="1.8" fill="currentColor"/></svg>
-            <h3>Observability &amp; SRE</h3>
-            <p>Prometheus, Grafana, Cloud Monitoring, CloudWatch, OpenTelemetry, Sentry. SLIs/SLOs, alert tuning, incident response, post-mortems, runbooks.</p>
-          </article>
-          <article class="skill">
-            <svg class="skill-icon" viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="13" rx="12" ry="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 13v22c0 2 5 4 12 4s12-2 12-4V13M12 24c0 2 5 4 12 4s12-2 12-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
-            <h3>Data platforms</h3>
-            <p>PostgreSQL &amp; TimescaleDB (PITR with wal-g), message brokers (Pub/Sub, RabbitMQ, Kafka), SQL, dbt pipelines.</p>
-          </article>
-        </div>
-
-        <div class="langs">
-          <h3 class="label">Languages I write</h3>
-          <ul class="tags">
-            <li>Go</li><li>Python</li><li>Bash</li><li>SQL</li><li>HCL</li><li>YAML</li>
-          </ul>
-          <h3 class="label">Languages I speak</h3>
-          <ul class="tags">
-            <li>French</li><li>English</li><li>Spanish</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ PROJECTS ============ -->
-    <section class="section projects" id="projects" aria-labelledby="projects-title">
-      <div class="wrap">
-        <header class="section-head">
-          <span class="section-num">03</span>
-          <h2 id="projects-title">Selected projects</h2>
-          <p class="section-intro">Side projects and open-source work, written up the way I'd explain them in an interview.</p>
-        </header>
-
-        <!-- Project 1 -->
-        <article class="project">
-          <div class="project-index" aria-hidden="true">i.</div>
-          <div class="project-main">
-            <p class="kicker">Open-source Helm chart</p>
-            <h3 class="project-title">pgkube-guard</h3>
-            <p class="project-summary">
-              Most teams back up their databases but never test the restore.
-              pgkube-guard backs up PostgreSQL to S3 every night, restores each dump into a throwaway database to prove it works,
-              and alerts the team the moment a backup or a restore fails.
-            </p>
-            <dl class="project-facts">
-              <div><dt>Context</dt><dd>Untested backups are the classic silent failure, discovered on the worst day.</dd></div>
-              <div><dt>Architecture</dt><dd>Kubernetes CronJobs → pg_dump to S3 → restore job into an ephemeral database → validation queries → alerting.</dd></div>
-            </dl>
-            <ul class="tags small"><li>Kubernetes</li><li>Helm</li><li>PostgreSQL</li><li>S3</li><li>Shell</li></ul>
-            <a class="link-arrow" href="https://github.com/elyas-gitspace/pgkube-guard" target="_blank" rel="noopener">View source <span aria-hidden="true">↗</span></a>
-          </div>
-          <figure class="project-diagram" aria-hidden="true">
-            <svg viewBox="0 0 320 200">
-              <g fill="none" stroke="var(--ink-2)" stroke-width="1.6" stroke-linejoin="round">
-                <path d="M20 40l70-1 1 40-70 1z"/>
-                <path d="M126 82l70 1-1 40-70-1z"/>
-                <path d="M230 40l70 1-1 40-70-1z"/>
-                <path d="M230 128l70-1 1 40-70 1z"/>
-              </g>
-              <g fill="var(--ink-2)" font-family="var(--font-sans)" font-size="11">
-                <text x="34" y="64">postgres</text><text x="146" y="106">S3</text>
-                <text x="246" y="64">restore</text><text x="250" y="152">alert</text>
-              </g>
-              <g fill="none" stroke="var(--slate)" stroke-width="1.3" stroke-linecap="round">
-                <path d="M92 66c14 6 22 14 32 24"/><path d="M196 94c12-10 20-22 34-30"/>
-                <path d="M266 82c2 14 0 30-2 44" stroke-dasharray="3 4"/>
-              </g>
-              <text x="20" y="186" fill="var(--muted)" font-family="var(--font-sans)" font-size="10" letter-spacing=".08em">fig. 02 — nightly loop</text>
-            </svg>
-          </figure>
-        </article>
-
-        <!-- Project 2 -->
-        <article class="project reverse">
-          <div class="project-index" aria-hidden="true">ii.</div>
-          <div class="project-main">
-            <p class="kicker">Self-hosted Kubernetes</p>
-            <h3 class="project-title">keda-observation</h3>
-            <p class="project-summary">
-              Event-driven autoscaling of a Kafka → PostgreSQL pipeline on my own Kubernetes cluster running on Hetzner VMs,
-              deployed with GitOps and monitored end to end.
-            </p>
-            <dl class="project-facts">
-              <div><dt>Context</dt><dd>Consumers sized for the peak waste resources the rest of the time. Scaling on queue lag instead of CPU fixes that.</dd></div>
-              <div><dt>Architecture</dt><dd>Kafka topic → Go consumers scaled by KEDA on consumer lag → PostgreSQL. ArgoCD syncs manifests; Prometheus &amp; Grafana watch it all.</dd></div>
-            </dl>
-            <ul class="tags small"><li>KEDA</li><li>Kafka</li><li>Go</li><li>ArgoCD</li><li>Prometheus</li><li>Grafana</li></ul>
-            <a class="link-arrow" href="https://github.com/elyas-gitspace/keda-observation" target="_blank" rel="noopener">View source <span aria-hidden="true">↗</span></a>
-          </div>
-          <figure class="project-diagram" aria-hidden="true">
-            <svg viewBox="0 0 320 200">
-              <g fill="none" stroke="var(--ink-2)" stroke-width="1.6" stroke-linejoin="round">
-                <path d="M16 78l64 1-1 40-64-1z"/>
-                <path d="M240 78l64-1 1 40-64 1z"/>
-              </g>
-              <g fill="none" stroke="var(--slate)" stroke-width="1.4">
-                <circle cx="132" cy="62" r="14"/><circle cx="170" cy="98" r="14"/><circle cx="132" cy="136" r="14" stroke-dasharray="3 4"/>
-              </g>
-              <g fill="none" stroke="var(--slate)" stroke-width="1.2" stroke-linecap="round">
-                <path d="M82 92c14-8 22-20 36-26M82 100c28 0 50-2 74-2M82 108c14 8 22 18 36 24" />
-                <path d="M184 98c18 0 34 0 54 0"/>
-              </g>
-              <g fill="var(--ink-2)" font-family="var(--font-sans)" font-size="11">
-                <text x="32" y="102">kafka</text><text x="252" y="102">postgres</text>
-              </g>
-              <text x="108" y="176" fill="var(--muted)" font-family="var(--font-sans)" font-size="10">pods: 0 → n on lag</text>
-              <text x="16" y="194" fill="var(--muted)" font-family="var(--font-sans)" font-size="10" letter-spacing=".08em">fig. 03 — scale on demand</text>
-            </svg>
-          </figure>
-        </article>
-
-        <!-- Project 3 -->
-        <article class="project">
-          <div class="project-index" aria-hidden="true">iii.</div>
-          <div class="project-main">
-            <p class="kicker">Infrastructure as Code · this website</p>
-            <h3 class="project-title">infra-foundry &amp; cloud-portofolio</h3>
-            <p class="project-summary">
-              A single Terraform repository that provisions the cloud resources behind all my side projects,
-              including this site: a private S3 bucket served by CloudFront through Origin Access Control.
-            </p>
-            <dl class="project-facts">
-              <div><dt>Context</dt><dd>One place to review, plan and apply every resource I own, instead of click-ops scattered across consoles.</dd></div>
-              <div><dt>Architecture</dt><dd>Terraform → private S3 (static files) ← CloudFront (OAC, HTTPS). Static site, no backend, zero idle compute.</dd></div>
-            </dl>
-            <ul class="tags small"><li>Terraform</li><li>AWS S3</li><li>CloudFront</li><li>OAC</li></ul>
-            <p class="link-row">
-              <a class="link-arrow" href="https://github.com/elyas-gitspace/infra-foundry" target="_blank" rel="noopener">infra-foundry <span aria-hidden="true">↗</span></a>
-              <a class="link-arrow" href="https://github.com/elyas-gitspace/cloud-portofolio" target="_blank" rel="noopener">cloud-portofolio <span aria-hidden="true">↗</span></a>
-            </p>
-          </div>
-          <figure class="project-diagram" aria-hidden="true">
-            <svg viewBox="0 0 320 200">
-              <g fill="none" stroke="var(--ink-2)" stroke-width="1.6" stroke-linejoin="round">
-                <circle cx="44" cy="98" r="22"/>
-                <path d="M124 76l72 1-1 44-72-1z"/>
-                <path d="M234 76l66-1 1 44-66 1z"/>
-              </g>
-              <g fill="none" stroke="var(--slate)" stroke-width="1.3" stroke-linecap="round">
-                <path d="M68 98c18-2 34-2 54 0"/><path d="M198 98c12 0 22 0 34 0"/>
-                <path d="M30 40c30 12 60 14 100 4s90-10 140 6" stroke-dasharray="2 5"/>
-              </g>
-              <g fill="var(--ink-2)" font-family="var(--font-sans)" font-size="11">
-                <text x="32" y="102">you</text><text x="134" y="102">CloudFront</text><text x="258" y="102">S3</text>
-              </g>
-              <text x="122" y="140" fill="var(--muted)" font-family="var(--font-sans)" font-size="10">HTTPS · edge cache</text>
-              <text x="236" y="140" fill="var(--muted)" font-family="var(--font-sans)" font-size="10">private · OAC</text>
-              <text x="16" y="194" fill="var(--muted)" font-family="var(--font-sans)" font-size="10" letter-spacing=".08em">fig. 04 — how you're reading this</text>
-            </svg>
-          </figure>
-        </article>
-
-        <!-- Open source -->
-        <div class="oss">
-          <h3 class="label">Open-source contributions</h3>
-          <ul class="oss-list">
-            <li>
-              <a href="https://github.com/kubernetes/website" target="_blank" rel="noopener"><strong>kubernetes/website</strong> <span aria-hidden="true">↗</span></a>
-              <span>Improved the official documentation page on CronJobs.</span>
-            </li>
-            <li>
-              <strong>mcp-builder</strong>
-              <span>Making the infrastructure of a PaaS for MCP servers more reliable: Terraform modules and CI/CD best practices.</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ EXPERIENCE ============ -->
-    <section class="section experience tinted" id="experience" aria-labelledby="experience-title">
-      <div class="wrap">
-        <header class="section-head">
-          <span class="section-num">04</span>
-          <h2 id="experience-title">Experience</h2>
-        </header>
-
-        <ol class="xp-list">
-          <li class="xp">
-            <div class="xp-meta">
-              <span class="xp-date">Jun 2026 — Jul 2027</span>
-              <span class="xp-type">Work-study</span>
-            </div>
-            <div class="xp-body">
-              <h3>Cloud Engineer <span class="at">at</span> Javelot</h3>
-              <p class="xp-context">Data platform on Google Cloud for an agri-tech company.</p>
-
-              <div class="xp-cols">
-                <div>
-                  <h4>Reliability &amp; SRE</h4>
-                  <ul>
-                    <li>Designed point-in-time recovery for TimescaleDB with wal-g: custom image, continuous WAL archiving, nightly base backups.</li>
-                    <li>Automated restore tests as chaos engineering: a daily light and a weekly full PITR restore, run by Cloud Build and triggered by Cloud Scheduler.</li>
-                    <li>On-call participation: crashed Cloud Run services, CPU saturation, a BGP incident. Wrote the post-mortems and runbooks.</li>
-                    <li>Removed a daily false-positive CPU alert on Cloud SQL caused by scheduled dbt jobs, by tuning the alert policy.</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4>Infrastructure as Code</h4>
-                  <ul>
-                    <li>Built reusable Terraform modules (Cloud Scheduler, monitoring for Pub/Sub, Cloud SQL, Cloud Build) and published them to GitLab's Terraform Registry, so other projects consume versions instead of cloning a monorepo.</li>
-                    <li>Deployed Pub/Sub-driven Cloud Run services and Compute Engine VMs (IAP, OS Login) in staging and production.</li>
-                    <li>Tightened IAM towards least privilege, including a dedicated group for interns.</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4>CI/CD &amp; DevSecOps</h4>
-                  <ul>
-                    <li>Added container image scanning (Dockle, Grype) and IaC scanning (KICS) to GitLab CI, failing on high and medium findings.</li>
-                    <li>Rolled out Renovate across several repositories and Cocogitto for automated, conventional release tagging.</li>
-                    <li>Built and hosted an MCP server so an AI agent can query our platform resources.</li>
-                  </ul>
-                </div>
-              </div>
-              <ul class="tags small"><li>GCP</li><li>Terraform</li><li>GitLab CI</li><li>Docker</li><li>Go</li><li>Pub/Sub</li><li>Grafana</li><li>SLIs/SLOs</li></ul>
-            </div>
-          </li>
-
-          <li class="xp">
-            <div class="xp-meta">
-              <span class="xp-date">Sep 2025 — May 2026</span>
-              <span class="xp-type">Work-study</span>
-            </div>
-            <div class="xp-body">
-              <h3>Datalake Developer (Cloud) <span class="at">at</span> EDF</h3>
-              <p class="xp-context">AWS data lake workloads for a major energy company.</p>
-              <ul>
-                <li>Monitored AWS workloads with CloudWatch dashboards and alarms to resolve incidents quickly.</li>
-                <li>Provisioned EC2, S3 and IAM resources with Terraform and contributed to CI/CD deployments.</li>
-                <li>Automated routine operations with Python and Bash scripts.</li>
-                <li>Wrote technical documentation and worked in Agile sprints.</li>
-              </ul>
-              <ul class="tags small"><li>AWS</li><li>Lambda</li><li>Athena</li><li>S3</li><li>Python</li><li>Terraform</li></ul>
-            </div>
-          </li>
-        </ol>
-
-        <div class="community">
-          <h3 class="label">Community</h3>
-          <p>Regular at GDG Paris, Cloud Native France, the GCP &amp; AWS Summits and KubeAutoDay.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CONTACT ============ -->
-    <section class="section contact" id="contact" aria-labelledby="contact-title">
-      <div class="wrap contact-grid">
-        <div>
-          <header class="section-head">
-            <span class="section-num">05</span>
-            <h2 id="contact-title">Let's talk.</h2>
-          </header>
-          <p class="lede">
-            I'm looking for a <strong>permanent position</strong> or a <strong>graduate programme</strong> starting in 2027,
-            in cloud, platform or reliability engineering. EU citizen, based in Paris.
-          </p>
-          <a class="email" href="mailto:meziani.elyaspro@gmail.com">meziani.elyaspro@gmail.com</a>
-        </div>
-        <ul class="contact-links">
-          <li><a href="https://github.com/elyas-gitspace" target="_blank" rel="me noopener"><span>GitHub</span><span class="muted">elyas-gitspace</span><span aria-hidden="true">↗</span></a></li>
-          <li><a href="https://www.linkedin.com/in/elyas-meziani-95009228b" target="_blank" rel="me noopener"><span>LinkedIn</span><span class="muted">elyas-meziani</span><span aria-hidden="true">↗</span></a></li>
-          <li><a href="mailto:meziani.elyaspro@gmail.com"><span>Email</span><span class="muted">meziani.elyaspro</span><span aria-hidden="true">→</span></a></li>
+        <a class="mail" href="mailto:meziani.elyaspro@gmail.com">meziani.elyaspro<wbr>@gmail.com</a>
+        <ul class="out out-lg mono">
+          <li><a href="https://github.com/elyas-gitspace" target="_blank" rel="me noopener">github.com/elyas-gitspace ↗</a></li>
+          <li><a href="https://www.linkedin.com/in/elyas-meziani-95009228b" target="_blank" rel="me noopener">linkedin.com/in/elyas-meziani ↗</a></li>
         </ul>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
+  <footer class="foot">
+    <div class="frame foot-inner mono">
       <p>© <span id="year">2026</span> Elyas Meziani</p>
-      <p class="muted">Static site · S3 + CloudFront · provisioned with Terraform</p>
+      <p>Static HTML · S3 + CloudFront · deployed by GitHub Actions over OIDC</p>
     </div>
   </footer>
 
