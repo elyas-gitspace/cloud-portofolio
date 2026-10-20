@@ -1,0 +1,41 @@
+# Deploy the static site to S3 + refresh CloudFront on every push to main.
+# Auth: GitHub OIDC -> IAM role (temporary credentials, no access keys stored anywhere).
+# The role is managed in infra-foundry (aws/cloud-portofolio/ci.tf) and only trusts this repo on main.
+name: deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - "deploy.sh"
+      - ".github/workflows/deploy.yml"
+  workflow_dispatch: # manual run from the Actions tab
+
+permissions:
+  id-token: write # lets GitHub issue the OIDC token for AWS
+  contents: read # checkout
+
+concurrency:
+  group: deploy-site
+  cancel-in-progress: false # never cut a deploy in half
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      BUCKET: ${{ vars.AWS_BUCKET_NAME }}
+      DISTRIBUTION_ID: ${{ vars.AWS_DISTRIBUTION_ID }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Assume the deploy role (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: eu-west-3
+          role-session-name: cloud-portofolio-${{ github.run_id }}
+
+      - name: Sync site to S3 and invalidate CloudFront
+        run: ./deploy.sh
