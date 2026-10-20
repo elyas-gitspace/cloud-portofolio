@@ -11,8 +11,8 @@ site/
 ├── robots.txt
 └── assets/
     ├── css/style.css
-    ├── js/main.js       # optional enhancements (menu, scroll reveal)
-    └── fonts/           # self-hosted Fraunces + Instrument Sans (OFL)
+    ├── js/main.js       # optional enhancements (current section, reveal)
+    └── fonts/           # self-hosted Archivo (subset) + IBM Plex Mono (OFL)
 deploy.sh               # sync to S3 + CloudFront invalidation
 ```
 
@@ -23,6 +23,20 @@ cd site && python3 -m http.server 8000
 ```
 
 ## Deploy
+
+**Automatic:** every push to `main` touching `site/` triggers `.github/workflows/deploy.yml`.
+It authenticates to AWS through **GitHub OIDC** (temporary credentials, no access keys) by assuming
+the `cloud-portofolio-ci-deploy` role managed in infra-foundry, then runs `deploy.sh`.
+
+Repository variables required (Settings → Secrets and variables → Actions → Variables):
+
+| Variable | Value (terraform output in infra-foundry `aws/cloud-portofolio`) |
+|---|---|
+| `AWS_ROLE_ARN` | `ci_role_arn` |
+| `AWS_BUCKET_NAME` | `bucket_name` |
+| `AWS_DISTRIBUTION_ID` | `distribution_id` |
+
+**Manual** (with your own AWS credentials):
 
 ```bash
 BUCKET=<bucket> DISTRIBUTION_ID=<id> ./deploy.sh
